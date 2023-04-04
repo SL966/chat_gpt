@@ -1,6 +1,6 @@
 {
   "name": "chat_ggpt",
-  "homepage": "https://SL966.github.io/chat_GPT",
+  "homepage": "https://github.com/SL966/chat_GPT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
