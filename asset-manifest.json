@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/chat_gpt/static/css/main.997c96c5.css",
-    "main.js": "/chat_gpt/static/js/main.b9ef2d5c.js",
+    "main.css": "/chat_gpt/static/css/main.e9c1d5cb.css",
+    "main.js": "/chat_gpt/static/js/main.ec6e6fe3.js",
     "static/js/787.287fa846.chunk.js": "/chat_gpt/static/js/787.287fa846.chunk.js",
     "static/media/react.svg": "/chat_gpt/static/media/react.6d4dd5dfc6163bdfcfe520bd6bef1a6a.svg",
     "index.html": "/chat_gpt/index.html",
-    "main.997c96c5.css.map": "/chat_gpt/static/css/main.997c96c5.css.map",
-    "main.b9ef2d5c.js.map": "/chat_gpt/static/js/main.b9ef2d5c.js.map",
+    "main.e9c1d5cb.css.map": "/chat_gpt/static/css/main.e9c1d5cb.css.map",
+    "main.ec6e6fe3.js.map": "/chat_gpt/static/js/main.ec6e6fe3.js.map",
     "787.287fa846.chunk.js.map": "/chat_gpt/static/js/787.287fa846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.997c96c5.css",
-    "static/js/main.b9ef2d5c.js"
+    "static/css/main.e9c1d5cb.css",
+    "static/js/main.ec6e6fe3.js"
   ]
 }
