@@ -29,9 +29,9 @@ export const Chatgpt: React.FC = () => {
   return (
       <>
         <div>
-          <link href="https://reactjs.org" >
+          <a href="https://reactjs.org" >
             <img src={reactLogo} className="logo react" alt="React logo"/>
-          </link>
+          </a>
         </div>
         <h1><MyComponent/></h1>
         <form onSubmit={getOpenAIResponse}>
