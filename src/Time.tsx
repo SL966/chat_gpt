@@ -54,7 +54,7 @@ const Time = () => {
 
         <div>
           <div>
-            <label htmlFor="endtime">Введите конечное время:</label>
+            <label htmlFor="endtime"> Введите конечное время: </label>
             <input
                 type="datetime-local"
                 id="endtime"
@@ -62,6 +62,7 @@ const Time = () => {
                 value={endTime}
                 onChange={(e) => setEndTime(e.target.value)}
             />
+
             <button onClick={handleSetTimer}>Установить таймер</button>
           </div>
           <h1 className="countdownDate">

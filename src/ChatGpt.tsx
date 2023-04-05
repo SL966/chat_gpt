@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ChatCompletionRequestMessageRoleEnum, Configuration, OpenAIApi} from 'openai';
 import reactLogo from "./assets/react.svg";
 import MyComponent from "./TextGpt";
@@ -9,6 +9,8 @@ export const ChatGpt: React.FC = () => {
   const configuration = new Configuration({
     apiKey: 'MY_OPENAI_KEY',
   });
+  const [isVisible, setIsVisible] = useState(false);
+
   const myOpenAi = new OpenAIApi(configuration);
   const chatGptMessages = [
     {
@@ -29,9 +31,15 @@ export const ChatGpt: React.FC = () => {
   return (
       <>
         <div>
-          <a href="https://reactjs.org" >
-            <img src={reactLogo} className="logo react" alt="React logo"/>
-          </a>
+          <div>
+            <button onClick={() => setIsVisible(!isVisible)}> click learn the 'React' </button>
+            {isVisible && <div>
+              <a href="https://reactjs.org" >
+                <img src={reactLogo} className="logo react" alt="React logo"/>
+              </a>
+            </div>}
+          </div>
+
         </div>
         <h1><MyComponent/></h1>
         <form onSubmit={getOpenAIResponse}>

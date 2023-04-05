@@ -29,7 +29,8 @@ const MyComponent = () => {
     }
   }, [spans]);
 
-  return <div className="word">
+  return(
+      <div className="word">
     <span>R</span>
     <span>e</span>
     <span>a</span>
@@ -44,7 +45,9 @@ const MyComponent = () => {
     <span>G</span>
     <span>P</span>
     <span>T</span>
-  </div>;
+  </div>
+  )
+
 };
 
 export default MyComponent;
