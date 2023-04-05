@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './Text_GPT.css'
+import './TextGpt.css'
 
 const MyComponent = () => {
   const [spans, setSpans] = useState<NodeListOf<HTMLSpanElement> | null>(null);

@@ -65,8 +65,8 @@ const Time = () => {
             <button onClick={handleSetTimer}>Установить таймер</button>
           </div>
           <h1 className="countdownDate">
-            До даты {new Date(countdownDate).toLocaleDateString()} времени{" "}
-            {new Date(countdownDate).toLocaleTimeString()} осталось:
+            Until the date {new Date(countdownDate).toLocaleDateString()} time{" "}
+            {new Date(countdownDate).toLocaleTimeString()} left:
           </h1>
           <div className="timeLeft">
             {timeLeft.days} дней {timeLeft.hours} часов{" "}

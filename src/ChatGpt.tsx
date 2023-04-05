@@ -1,9 +1,9 @@
 import React from 'react';
 import {ChatCompletionRequestMessageRoleEnum, Configuration, OpenAIApi} from 'openai';
 import reactLogo from "./assets/react.svg";
-import MyComponent from "./Text_GPT";
+import MyComponent from "./TextGpt";
 
-export const Chatgpt: React.FC = () => {
+export const ChatGpt: React.FC = () => {
   const [prompt, setPrompt] = React.useState<string | undefined>('');
   const [response, setResponse] = React.useState<string | undefined>('');
   const configuration = new Configuration({

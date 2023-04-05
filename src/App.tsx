@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Time from "./Time";
-import {Chatgpt} from "./Chatgpt";
+import {ChatGpt} from "./ChatGpt";
 
 
 
@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
       <>
         <Time/>
-        <Chatgpt/>
+        <ChatGpt/>
       </>
   );
 };
