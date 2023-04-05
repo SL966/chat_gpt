@@ -1,7 +1,7 @@
 import React from 'react';
 import {ChatCompletionRequestMessageRoleEnum, Configuration, OpenAIApi} from 'openai';
 import {ButtonClick} from "./ButtonClick";
-import TextGpt from "./TextGpt";
+import MyComponent from "./TextGpt";
 
 export const ChatGpt: React.FC = () => {
   const [prompt, setPrompt] = React.useState<string | undefined>('');
@@ -33,7 +33,7 @@ export const ChatGpt: React.FC = () => {
           <ButtonClick/>
         </div>
         <h1>
-          <TextGpt/>
+          <MyComponent/>
         </h1>
         <form onSubmit={getOpenAIResponse}>
           <input
