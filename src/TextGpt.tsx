@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './TextGpt.css'
 
-const MyComponent = () => {
+const TextGpt = () => {
   const [spans, setSpans] = useState<NodeListOf<HTMLSpanElement> | null>(null);
 
   useEffect(() => {
@@ -50,4 +50,4 @@ const MyComponent = () => {
 
 };
 
-export default MyComponent;
+export default TextGpt;

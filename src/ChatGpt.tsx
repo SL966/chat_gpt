@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ChatCompletionRequestMessageRoleEnum, Configuration, OpenAIApi} from 'openai';
-import reactLogo from "./assets/react.svg";
-import MyComponent from "./TextGpt";
+import {ButtonClick} from "./ButtonClick";
+import TextGpt from "./TextGpt";
 
 export const ChatGpt: React.FC = () => {
   const [prompt, setPrompt] = React.useState<string | undefined>('');
@@ -9,7 +9,6 @@ export const ChatGpt: React.FC = () => {
   const configuration = new Configuration({
     apiKey: 'MY_OPENAI_KEY',
   });
-  const [isVisible, setIsVisible] = useState(false);
 
   const myOpenAi = new OpenAIApi(configuration);
   const chatGptMessages = [
@@ -31,17 +30,11 @@ export const ChatGpt: React.FC = () => {
   return (
       <>
         <div>
-          <div>
-            <button onClick={() => setIsVisible(!isVisible)}> click learn the 'React' </button>
-            {isVisible && <div>
-              <a href="https://reactjs.org" >
-                <img src={reactLogo} className="logo react" alt="React logo"/>
-              </a>
-            </div>}
-          </div>
-
+          <ButtonClick/>
         </div>
-        <h1><MyComponent/></h1>
+        <h1>
+          <TextGpt/>
+        </h1>
         <form onSubmit={getOpenAIResponse}>
           <input
               id="chat-input"
@@ -49,6 +42,7 @@ export const ChatGpt: React.FC = () => {
               value={prompt}
               onChange={e => setPrompt(e.target.value)}
           />
+
           <button type="submit">Submit</button>
         </form>
         {/* If there's no response then don't show the element,
