@@ -3,7 +3,7 @@ import {ChatCompletionRequestMessageRoleEnum, Configuration, OpenAIApi} from 'op
 import reactLogo from "./assets/react.svg";
 import MyComponent from "./Text_GPT";
 
-export const Chat_Gpt: React.FC = () => {
+export const Chatgpt: React.FC = () => {
   const [prompt, setPrompt] = React.useState<string | undefined>('');
   const [response, setResponse] = React.useState<string | undefined>('');
   const configuration = new Configuration({
@@ -29,9 +29,9 @@ export const Chat_Gpt: React.FC = () => {
   return (
       <>
         <div>
-          <a href="https://reactjs.org" target="_blank">
+          <link href="https://reactjs.org" >
             <img src={reactLogo} className="logo react" alt="React logo"/>
-          </a>
+          </link>
         </div>
         <h1><MyComponent/></h1>
         <form onSubmit={getOpenAIResponse}>
@@ -44,9 +44,9 @@ export const Chat_Gpt: React.FC = () => {
           <button type="submit">Submit</button>
         </form>
         {/* If there's no response then don't show the element,
-			we can replace it with a Loading comonent */}
+			we can replace it with a Loading component */}
         {!!response && <div>{response}</div>}
       </>
   );
 };
-export default Chat_Gpt;
+
