@@ -8,8 +8,10 @@ import {ChatGpt} from "./ChatGpt";
 const App: React.FC = () => {
     return (
         <>
+
             <Time/>
             <ChatGpt/>
+
         </>
     );
 };
